@@ -8,26 +8,35 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
       <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
       <link rel="stylesheet" type="text/css" href="style.css">
+      <script src="main.js"></script>
     </head>
   
     <body>
       <div class="col-xs-12 header_div text-center">
         <h2>Animal Recognizer</h2>
-        <p>Note: As The phone hears an animal ,it will then show which animal it is.</p>
+        <p>Note: As the device hears an animal ,it will then show which animal it is and how many times it detected the animal.</p>
       </div>
       <div class="main_div">
         <center>
+          <span>
+            Number of dogs : 
+            <div id="doge"></div>
+            Number of cats : 
+            <div id="cat"></div>
+            Number of cows : 
+            <div id="cow"></div>
+            Number of lions : 
+            <div id="lion"></div>
+          </span>
         <br>
         <button class="btn btn-info" onclick="startClassfication();">START</button>
         <h3 id="result_label">I can hear - </h3>
         <h4 id="result_confidence">Accuracy - </h4>
         <br>
-        <img style="visibility:hidden;" src="download.jfif" id="dog" width="300" height="300">
-        <img style="visibility:hidden;" src="dowmload.png" id="cat" width="300" height="300">
-        <img style="visibility:hidden;" src="download (1).png" id="cow" width="300" height="300">
-        <img style="visibility:hidden;" src="51-515489_happy-lion-clipart.png" id="lion" width="300" height="300"> 
+        <img  src="pot.png" id="img" width="300" height="300">
+         
       </center>
       <div class="copy_right_footer">Developed by - Raunak Das</div
-  <script src="main.js"></script>
+
     </body>
   </html>
