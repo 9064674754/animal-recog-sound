@@ -24,26 +24,58 @@ function gotResults(error,results){
     img=document.getElementById("img");
     if(results[0].label=="Cat"){
         img.src='download.png';
-        cat=cat+1;
+        cat=1;
+        dog=0;
+        cow=0;
+        lion=0;
         document.getElementById("cat").innerHTML=cat;
+        document.getElementById("doge").innerHTML=dog;
+        document.getElementById("lion").innerHTML=lion;
+        document.getElementById("cow").innerHTML=cow;
     }
     else if(results[0].label=="Dog"){
         img.src='egg.png';
-        dog=dog+1;
+        cat=0;
+        dog=1;
+        cow=0;
+        lion=0;
+        document.getElementById("cat").innerHTML=cat;
         document.getElementById("doge").innerHTML=dog;
+        document.getElementById("lion").innerHTML=lion;
+        document.getElementById("cow").innerHTML=cow;
     }
     else if(results[0].label=="Cow"){
         img.src='cow.png';
-        cow=cow+1;
+        cat=0;
+        dog=0;
+        cow=1;
+        lion=0;
+        document.getElementById("cat").innerHTML=cat;
+        document.getElementById("doge").innerHTML=dog;
+        document.getElementById("lion").innerHTML=lion;
         document.getElementById("cow").innerHTML=cow;
     }
     else if(results[0].label=="Lion"){
         img.src='51-515489_happy-lion-clipart.png';
-        lion=lion+1;
+        cat=0;
+        dog=0;
+        cow=0;
+        lion=1;
+        document.getElementById("cat").innerHTML=cat;
+        document.getElementById("doge").innerHTML=dog;
         document.getElementById("lion").innerHTML=lion;
+        document.getElementById("cow").innerHTML=cow;
     }
     else{
         img.src='pot.png';
+        cat=0;
+        dog=0;
+        cow=0;
+        lion=0;
+        document.getElementById("cat").innerHTML=cat;
+        document.getElementById("doge").innerHTML=dog;
+        document.getElementById("lion").innerHTML=lion;
+        document.getElementById("cow").innerHTML=cow;
     }
     }
 }
